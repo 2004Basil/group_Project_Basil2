@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Start Css Header */
+.TopHeader {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  width: 100%;
+  height: 48px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 13px 0;
+}
+
+.shop {
+  display: flex;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 40px 8% 20px 8%;
+}
+
+nav h1 {
+  font-size: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.without_underline a {
+  text-decoration: none;
+  color: black;
+}
+
+.underline a {
+  color: black;
+}
+
+.input_research {
+  border: none;
+}
+
+.research {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.research a{
+  color: black;
+}
+
+.fa-user:hover+.user-info{
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  right: -19px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 14px;
+  margin-right: 145px;
+  line-height: 36px;
+  padding: 24px 12px 12px 27px;
+  color: white;
+  border-radius: 10px;
+  top: 100px;
+}
+.fa-user:hover+.user-info i{
+  padding-right: 16px;
+  font-size: 17px;
+}
+.fa-user:hover{
+  background-color: red;
+  border-radius: 100PX;
+  width: 30PX;
+  PADDING: 5PX 7PX;
+  color: white;
+  margin-left: -9PX;
+}
+.user-info{
+  display: none;
+}
+
+.Box {
+  background: #f5f5f5;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.Box:hover input {
+  width: 200px;
+}
+
+.Box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500px;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.Box a .search {
+  color: black;
+  font-size: 18px;
+}
+/* Start Css Header */
+
+/* Start Css Content */
+
+.Contener {
+  margin: 3.5% 0;
+}
+
+.min {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 5.5%;
+}
+.min .but{
+  padding:10px;
+
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 80px auto;
+}
+.products .product1 {
+  display: flex;
+  position: relative;
+  margin: 10px;
+  width: 250px;
+  height: 370px;
+  background: #f5f5f5;
+  margin: 10px 8px;
+}
+.products .product1 img {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+}
+.products .product1 .trash {
+  position: absolute;
+  top: 10px;
+  right:10px;
+  padding: 2px;
+}
+.products .product1 .price {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: red;
+}
+.products .product1 .fot {
+  padding-top: 17px;
+  position: absolute;
+  bottom: 70px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+}
+.products .product1 .fot a {
+  text-decoration: none;
+}
+.products .product1 .ico {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+
+  background: #00ff66;
+}
+.products .product1 .fot a {
+  color: white;
+  text-align: ceter;
+}
+.after {
+  background: #ffffff;
+  position: absolute;
+  color: darkgray;
+  padding: 15px;
+  top: 300px;
+  text-align: center;
+  width: 100%;
+}
+
+.min .redDIV {
+  width: 10px;
+  background: red;
+}
+/* .img:hover{
+   -webkit-transform:scale(1.1);
+} */
+
+/* End Css Content */
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.contain {
+  display: flex;
+}
+
+.footer .col {
+  /* width: 190px; */
+  padding: 3% 5%;
+}
+
+.footer .col h1 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0px 5px 0px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer .col ul {
+  list-style-type: none;
+}
+
+.footer .col ul li {
+  color: #999999;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 8px 0px 8px 0px;
+  /*Cursor Type*/
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.email input {
+  border: 1.5px solid #FAFAFA;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.Qrcode {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.google_paly_apple {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: 0.1s;
+}
+
+.cope {
+  border-top: 1px solid gray;
+  padding: 15px 0;
+  text-align: center;
+  color: gray;
+
+}
+
+footer{
+  margin-top: 3%;
+}
+
+
+/*End of Footer*/

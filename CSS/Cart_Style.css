@@ -1,0 +1,366 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Start Header*/
+
+.TopHeader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 48px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 13px 0;
+}
+
+.shop {
+    display: flex;
+    gap: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 40px 8% 20px 8%;
+    position: relative;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.without_underline a {
+    text-decoration: none;
+    color: black;
+}
+
+.underline a {
+    color: black;
+}
+
+.input_research {
+    border: none;
+}
+
+.research {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-user:hover+.user-info{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    right: -19px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 14px;
+    margin-right: 145px;
+    line-height: 36px;
+    padding: 24px 12px 12px 27px;
+    color: white;
+    border-radius: 10px;
+    top: 100px;
+}
+.fa-user:hover+.user-info i{
+    padding-right: 16px;
+    font-size: 17px;
+}
+.fa-user:hover{
+    background-color: red;
+    border-radius: 100PX;
+    width: 30PX;
+    PADDING: 5PX 7PX;
+    color: white;
+    margin-left: -9PX;
+}
+.user-info{
+    display: none;
+}
+
+.header {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.Box {
+    background: #F5F5F5;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.Box:hover input {
+    width: 200px;
+}
+
+.Box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500px;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.Box a .search {
+    color: black;
+    font-size: 18px;
+}
+
+.Home_Cart {
+    padding-left: 8%;
+    padding-top: 5%;
+    display: flex;
+    gap: 15px;
+    color: silver;
+}
+
+.Home_Cart a {
+    text-decoration: none;
+    color: silver;
+}
+
+.Cart_link a {
+    color: black;
+}
+
+/* end header  */
+
+.Cart {
+    padding: 5% 8%;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 72px;
+    padding: 0 4%;
+}
+
+.price_padding {
+    padding-left: 11%;
+}
+
+.num_padding {
+    padding-right: 3%;
+}
+
+.LCD {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.LCD img {
+    width: 50px;
+    height: 40px;
+}
+
+.return {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+
+}
+
+.return button {
+    width: 170px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.code {
+    margin-top: -110px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.button1 {
+    width: 250px;
+    height: 45px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: silver;
+    text-align: left;
+    padding: 7px 7px;
+    margin-right: 2%;
+}
+
+.button2 {
+    width: 150px;
+    height: 45px;
+    background: #DB4444;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: 1px solid white;
+}
+
+.cart_total {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    margin-left: 360px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+hr {
+    border: 1px solid silver;
+    width: 360px;
+    height: 0px;
+    left: 20px;
+    top: 124px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_cart {
+    width: 170px;
+    height: 35px;
+    background: #DB4444;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.button_cart_div {
+    display: flex;
+    justify-content: center;
+}
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.contain {
+    display: flex;
+}
+
+.footer .col {
+    /* width: 190px; */
+    padding: 3% 5%;
+}
+
+.footer .col h1 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px 5px 0px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer .col ul {
+    list-style-type: none;
+}
+
+.footer .col ul li {
+    color: #999999;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 0px 8px 0px;
+    /*Cursor Type*/
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.email input {
+    border: 1.5px solid #FAFAFA;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 100%;
+    height: 45px;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Qrcode {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.google_paly_apple {
+    display: flex;
+    flex-direction: column;
+}
+
+.social_media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer .col ul li:hover {
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.cope {
+    border-top: 1px solid gray;
+    padding: 15px 0;
+    text-align: center;
+    color: gray;
+
+}
+
+footer{
+    margin-top: 3%;
+}
+
+
+/*End of Footer*/

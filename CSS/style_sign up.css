@@ -1,0 +1,291 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: myfont;
+  src: url("../font/Poppins-SemiBold.ttf");
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:myfont ;
+}
+
+/* Start Css Header */
+.TopHeader {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  width: 100%;
+  height: 48px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 13px 0;
+}
+
+.shop {
+  display: flex;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 40px 8% 20px 8%;
+}
+
+nav h1 {
+  font-size: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.without_underline a {
+  text-decoration: none;
+  color: black;
+}
+
+.underline a {
+  color: black;
+}
+
+.input_research {
+  border: none;
+}
+
+.research {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.research a{
+  color: black;
+}
+
+.fa-user:hover+.user-info{
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  right: -19px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 14px;
+  margin-right: 145px;
+  line-height: 36px;
+  padding: 24px 12px 12px 27px;
+  color: white;
+  border-radius: 10px;
+  top: 100px;
+}
+.fa-user:hover+.user-info i{
+  padding-right: 16px;
+  font-size: 17px;
+}
+.fa-user:hover{
+  background-color: red;
+  border-radius: 100PX;
+  width: 30PX;
+  PADDING: 5PX 7PX;
+  color: white;
+  margin-left: -9PX;
+}
+.user-info{
+  display: none;
+}
+
+
+.Box {
+  background: #f5f5f5;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.Box:hover input {
+  width: 200px;
+}
+
+.Box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500px;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.Box a .search {
+  color: black;
+  font-size: 18px;
+}
+
+/* Start Css Header */
+
+
+
+/* Start Css Content */
+.sign_up {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sign_up .img {
+  margin-right: 10%;
+}
+
+.sign_up .lable {
+  width: 300px;
+  margin-top: 5%;
+}
+
+.sign_up .lable input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding: 2px;
+}
+
+.create_button {
+  width: 100%;
+  padding: 7px 18px;
+  background-color: #db4444;
+  color: white;
+  border: 1px solid #db4444;
+  border-radius: 10px;
+}
+
+.SINuP {
+  border: 2px solid gray;
+  padding: 7px 18px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.log_in {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  color: gray;
+}
+
+.log_in a {
+  color: gray;
+}
+
+/* End Css Content */
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.contain {
+  display: flex;
+}
+
+.footer .col {
+  /* width: 190px; */
+  padding: 3% 5%;
+}
+
+.footer .col h1 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0px 5px 0px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer .col ul {
+  list-style-type: none;
+}
+
+.footer .col ul li {
+  color: #999999;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 8px 0px 8px 0px;
+  /*Cursor Type*/
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.email input {
+  border: 1.5px solid #FAFAFA;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.Qrcode {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.google_paly_apple {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: 0.1s;
+}
+
+.cope {
+  border-top: 1px solid gray;
+  padding: 15px 0;
+  text-align: center;
+  color: gray;
+
+}
+
+footer{
+  margin-top: 3%;
+}
+
+
+/*End of Footer*/
